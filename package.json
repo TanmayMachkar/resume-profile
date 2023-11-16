@@ -27,8 +27,8 @@
     "@parcel/transformer-sass": "^2.8.2",
     "gh-pages": "^6.0.0",
     "parcel": "^2.8.2",
-    "shx": "^0.3.2",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "shx": "^0.3.4"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
@@ -36,13 +36,5 @@
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.8.0"
-  },
-  "scripts": {
-    "start": "parcel ./src/index.html",
-    "prebuild-dev": "shx rm -rf dist/*",
-    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build ./src/index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   }
 }
